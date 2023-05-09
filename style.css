@@ -4,14 +4,34 @@
 /* Header*/
 .logo {
 display: flex;
+justify-content: flex-start;
 align-items: center;
 width: 15%;
+flex-wrap: wrap;
 }
 
 header {
 display: flex;
-align-items: center;
+
+background-color: white;
 }
+
+.menuNavegable {
+
+display: flex;
+justify-content: flex-end;
+align-items: end;
+width: 100%;
+
+}
+
+
+.navbar-nav {
+
+font-size: medium;
+
+}
+
 /* Fin Header*/
 
 
@@ -40,19 +60,59 @@ align-items: center;
 
 
 
+/* Grilla productos*/
 
 
 
+.gridProductos {
 
+    display: grid;
 
-/* grilla productos*/
-.row align-items-center {
-    display: flex;
-    justify-content: space-between;
-    width: 30%;
+    grid-template-areas: 
+    
+    "img1 img2 img3" ;
 
 }
-/* fin grilla productos*/
+
+.ebikeProducto {
+
+    grid-area: img1;
+    width: 100%;
+    border: 1px solid rgb(195, 192, 209);
+    border-radius: 15px;
+}
+
+
+.monoProducto {
+    grid-area: img2;
+    width: 100%;
+    border: 1px solid rgb(195, 192, 209);
+    border-radius: 15px;
+}
+
+.monopatinProducto {
+
+    grid-area: img3;
+    width: 100%;
+    border: 1px solid rgb(195, 192, 209);
+    border-radius: 15px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fin grilla productos*/
 
 
 
